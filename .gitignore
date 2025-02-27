@@ -11,6 +11,3 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-# Usernames file
-usernames.txt
