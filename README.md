@@ -1,6 +1,6 @@
 # GitHub Username Availability Checker
 
-This PowerShell script periodically checks the availability of specified GitHub usernames and sends notifications when a username becomes available. It's particularly useful for users looking to acquire a specific GitHub username that is currently taken, typically by abandoned accounts.
+This PowerShell script periodically checks the availability of specified usernames and sends notifications when a username becomes available. It's particularly useful for users looking to acquire a specific username that is currently taken, typically by abandoned accounts.
 
 ## ✨ Features
 
@@ -11,14 +11,14 @@ This PowerShell script periodically checks the availability of specified GitHub 
 ## 📋 Requirements
 
 - [BurntToast](https://github.com/Windos/BurntToast) module for notifications
-- Internet access to check GitHub usernames and profiles
+- Internet access to check usernames and profiles
 
 ## ⚙ Installation
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/AggroTheShark/gh-username-checker.git
-cd gh-username-checker
+git clone https://github.com/AggroTheShark/username-availability-checker.git
+cd username-availability-checker
 ```
 
 ### 2. Install the _BurnToast_ module
@@ -39,10 +39,19 @@ yet-another-username
 
 ## 💻 Usage
 
+By default, the script checks usernames available for GitHub. You can look for usernames in a different social media or platform by simply changing the `url` variable in the PowerShell script file.
+
+Examples:
+```powershell
+$url = "https://github.com/$username"; # GitHub
+$url = "https://instagram.com/$username"; # Instagram
+$url = "https://twitter.com/$username"; # Twitter
+```
+
 To run this script manually, execute it from a PowerShell terminal in the installation directory:
 
 ```powershell
-.\gh-username-checker.ps1
+.\username-checker.ps1
 ```
 
 ## ⏰ Scheduling as a Periodic Task
@@ -65,7 +74,7 @@ To automatically run the script daily, you can set it up as a scheduled task in 
 * In the "Program/script" field, enter the path to `powershell.exe` (usually `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`).
 * In the "Add arguments" field, enter the following (replace the path with your actual script path):
 ```powershell
--WindowStyle Hidden -File "C:\Path\To\gh-username-checker\gh-username-checker.ps1"
+-WindowStyle Hidden -File "C:\Path\To\username-availability-checker\username-checker.ps1"
 ```
 
 ### 5. Finish

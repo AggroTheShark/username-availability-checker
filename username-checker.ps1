@@ -16,6 +16,7 @@ if ( Test-Path $usernamesFile )
 
     foreach ( $username in $usernames )
     {
+        # Change this URL to your liking
         $url = "https://github.com/$username";
 
         try
