@@ -1,4 +1,4 @@
-# GitHub Username Availability Checker
+# 👤 Username Availability Checker
 
 This PowerShell script periodically checks the availability of specified usernames and sends notifications when a username becomes available. It's particularly useful for users looking to acquire a specific username that is currently taken, typically by abandoned accounts.
 
