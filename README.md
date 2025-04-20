@@ -17,7 +17,7 @@ This PowerShell script periodically checks the availability of specified usernam
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/AggroTheShark/username-availability-checker.git
+git clone https://github.com/pispidu/username-availability-checker.git
 cd username-availability-checker
 ```
 
